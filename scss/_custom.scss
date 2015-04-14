@@ -1,9 +1,30 @@
+.row{
+	margin-left: 0;
+	margin-right: 0;
+}
+
 #about-team{
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 	margin-top: 25px;
 	.photo{
+		position: relative;
 		img{
 			border-radius: 50%;
 			border: 8px solid rgba(255,255,255,0.1);
+			width: 60%;
+			&:after {
+			    content:"\A";
+			    position:absolute;
+			    width:100%; height:100%;
+			    top:0; left:0;
+			    background:rgba(0,0,0,0.6);
+			    opacity:0;
+			    transition: all 1s;
+			    -webkit-transition: all 1s;
+			}
+			&:hover:after {
+			    opacity:1;
+			}
 		}
 	}
 	.description{
@@ -16,10 +37,54 @@
 			font-weight: bold;
 			text-transform: uppercase;
 			font-size: 11pt;
-			color: $color_3;
 		}		
 		.career{
 			
+		}
+	}
+}
+
+#portfolio{
+	.portfolio-header{
+		padding: 100px 0;
+	}
+}
+
+.navbar-default{
+	.navbar-header{
+		.navbar-brand{
+			&:hover{
+				color: white;
+				animation: bounce 1s .5s;
+  				-webkit-transform: scale(0.85);
+			}
+		}
+	}
+}
+
+@-webkit-keyframes bounce {
+  0% { -webkit-transform: scale(1.1); opacity: 1 }
+  50% { -webkit-transform: scale(1.6); opacity: .7; }
+  60% { -webkit-transform: scale(0.6); opacity: 1 }
+  80% { -webkit-transform: scale(0.95) }
+  100% { -webkit-transform: scale(0.85) }
+}
+
+.no-padding{
+	padding: 0;
+}
+
+@media screen and (max-width:767px){
+	.navbar-default{
+		.navbar-header{
+			.navbar-brand{
+			    font-size: 40pt;
+			}
+		}
+	}
+	header{
+		.header-content{
+			padding: 150px 15px;
 		}
 	}
 }
