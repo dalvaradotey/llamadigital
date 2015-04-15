@@ -3,8 +3,7 @@
 // Code licensed under the Apache License v2.0.
 // For details, see http://www.apache.org/licenses/LICENSE-2.0.
 //
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,300);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
 
 html,
 body {
@@ -13,7 +12,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -232,7 +231,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 16pt;
     }
 }
 

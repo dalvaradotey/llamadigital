@@ -4,7 +4,6 @@
 }
 
 #about-team{
-	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 	margin-top: 25px;
 	.photo{
 		position: relative;
@@ -41,6 +40,21 @@
 		.career{
 			
 		}
+	}
+}
+
+.service-box{
+	.sub-title{
+		font-weight: 300;
+		font-size: 12.63pt;
+	}
+	.description{
+		font-size: 10.5pt;
+		text-align: justify;
+		text-align-last: center;
+	}
+	.divisor{
+		border-color: $color_5;
 	}
 }
 
