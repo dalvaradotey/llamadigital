@@ -127,6 +127,12 @@ footer{
 	width: 60%;
 }
 
+.fb_iframe_widget{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
 @media screen and (max-width:767px){
 	.navbar-default{
 		.navbar-header{
