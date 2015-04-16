@@ -141,3 +141,9 @@ footer{
 		}
 	}
 }
+
+@media screen and (max-width:400px){
+	.modal-dialog{
+		width: 95%;
+	}
+}
