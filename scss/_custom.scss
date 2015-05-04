@@ -5,42 +5,44 @@
 
 #about-team{
 	margin-top: 50px;
-	.photo{
-		position: relative;
-		img{
-			border-radius: 50%;
-			border: 8px solid rgba(255,255,255,0.1);
-			width: 60%;
-			&:after {
-			    content:"\A";
-			    position:absolute;
-			    width:100%; height:100%;
-			    top:0; left:0;
-			    background:rgba(0,0,0,0.6);
-			    opacity:0;
-			    transition: all 1s;
-			    -webkit-transition: all 1s;
+	.team-box{
+		.photo{
+			position: relative;
+			img{
+				border-radius: 50%;
+				border: 8px solid rgba(255,255,255,0.1);
+				width: 60%;
+				&:after {
+				    content:"\A";
+				    position:absolute;
+				    width:100%; height:100%;
+				    top:0; left:0;
+				    background:rgba(0,0,0,0.6);
+				    opacity:0;
+				    transition: all 1s;
+				    -webkit-transition: all 1s;
+				}
+				&:hover:after {
+				    opacity:1;
+				}
 			}
-			&:hover:after {
-			    opacity:1;
+		}
+		.description{
+			.name{
+				font-weight: bold;
+				font-size: 20pt;
+				margin-bottom: 6px;
 			}
-		}
-	}
-	.description{
-		.name{
-			font-weight: bold;
-			font-size: 20pt;
-			margin-bottom: 6px;
-		}
-		.position{
-			color: $color_3;
-			font-weight: bold;
-			text-transform: uppercase;
-			font-size: 11pt;
-		}		
-		.career{
-			
-		}
+			.position{
+				color: $color_3;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 11pt;
+			}		
+			.career{
+				
+			}
+		}	
 	}
 }
 
@@ -131,6 +133,17 @@ footer{
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
+}
+
+@media screen and (max-width:991px){
+	#about-team{
+		.team-box{
+			margin-bottom: 62px;
+			&:last-child{
+				margin-bottom: 0;
+			}	
+		}
+	}
 }
 
 @media screen and (max-width:767px){
