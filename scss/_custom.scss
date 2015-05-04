@@ -135,6 +135,10 @@ footer{
 	right: 20px;
 }
 
+.castillo-hidalog-logo{
+	width: 130px;
+}
+
 @media screen and (max-width:991px){
 	#about-team{
 		.team-box{
@@ -165,4 +169,10 @@ footer{
 	.modal-dialog{
 		width: 95%;
 	}
+}
+
+@media screen and (max-width:320px){
+	.castillo-hidalog-logo{
+		width: 80px;
+	}	
 }
